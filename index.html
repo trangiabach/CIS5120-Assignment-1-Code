@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Weather App - Bach Tran</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container mx-auto p-4">
+    <div class="flex py-7 w-full">
+      <div class="flex flex-col space-y-1.5 w-full">
+        <div class="flex flex-1 justify-between w-full">
+          <div class="text-[30px]">Philadelphia</div>
+          <div class="flex space-x-1.5 items-center">
+            <div style="width: 20px;"> <img src="notification.png" /></div>
+            <div style="width: 20px;"> <img src="map.png" /></div>
+          </div>
+        </div>
+        <div class="flex space-x-2 items-center">
+          <div style="width: 80px;"><img src="clear-moon.png" alt="Description of the image"></div>
+          <div class="flex flex-col space-y-1.5">
+            <div class="text-xl">19°</div>
+            <div class="text-xs opacity-80">Clear</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-2">
+      <div class="text-sm opacity-80">Hourly Forecast</div>
+      <div class="py-4" />
+      <div class="flex space-x-8 mx-auto justify-center">
+        <div class="flex flex-col space-y-1.5 items-center">
+          <div class="text-sm text-center">12 AM</div>
+          <div style="width: 35px;"> <img src="rain-moon.png" /></div>
+          <div class="text-xs text-cyan-400">30%</div>
+          <div class="text-sm pt-1">19°</div>
+        </div>
+        <div class="flex flex-col space-y-1.5 items-center text-center">
+          <div class="text-sm text-center">1 AM</div>
+          <div style="width: 35px;"> <img src="rain-moon.png" /></div>
+          <div class="text-xs text-cyan-400">30%</div>
+          <div class="text-sm pt-1">19°</div>
+        </div>
+        <div class="flex flex-col space-y-1.5 items-center text-center">
+          <div class="text-sm text-center">2 AM</div>
+          <div style="width: 35px;"> <img src="rain-moon.png" /></div>
+          <div class="text-xs text-cyan-400">30%</div>
+          <div class="text-sm pt-1">19°</div>
+        </div>
+        <div class="flex flex-col space-y-1.5 items-center text-center">
+          <div class="text-sm text-center">3 AM</div>
+          <div style="width: 35px;"> <img src="rain-moon.png" /></div>
+          <div class="text-xs text-cyan-400">30%</div>
+          <div class="text-sm pt-1">19°</div>
+        </div>
+        <div class="flex flex-col space-y-1.5 items-center text-center">
+          <div class="text-sm text-center">4 AM</div>
+          <div style="width: 35px;"> <img src="rain-moon.png" /></div>
+          <div class="text-xs text-cyan-400">30%</div>
+          <div class="text-sm pt-1">19°</div>
+        </div>
+      </div>
+    </div>
+    <div class="py-4">
+      <div class="grid grid-cols-2 gap-2">
+        <div class="bg-zinc-800 flex flex-col p-3 rounded-lg space-y-1.5">
+          <div class="flex space-x-1.5 items-center">
+            <div style="width: 25px;"> <img src="visibility.png" /></div>
+            <div class="text-sm">Visibility</div>
+          </div>
+          <div class="text-lg">1 KM</div>
+          <div class="text-[10px] opacity-80">Haze is affecting visibility</div>
+        </div>
+        <div class="bg-zinc-800 flex flex-col p-3 rounded-lg space-y-1.5">
+          <div class="flex space-x-1.5 items-center">
+            <div style="width: 25px;"> <img src="uv-index.png" /></div>
+            <div class="text-sm">UV Index</div>
+          </div>
+          <div class="text-lg">4M</div>
+          <div class="text-[10px] opacity-80">Moderate</div>
+        </div>
+        <div class="bg-zinc-800 flex flex-col p-3 rounded-lg space-y-1.5">
+          <div class="flex space-x-1.5 items-center">
+            <div style="width: 10px"> <img src="humidity.png" /></div>
+            <div class="text-sm">Humidity</div>
+          </div>
+          <div class="text-lg">80%</div>
+          <div class="text-[10px] opacity-80">More dew expected</div>
+        </div>
+        <div class="bg-zinc-800 flex flex-col p-3 rounded-lg space-y-1.5">
+          <div class="flex space-x-1.5 items-center">
+            <div style="width: 25px;"> <img src="visibility.png" /></div>
+            <div class="text-sm">Wind speed</div>
+          </div>
+          <div class="text-lg">5 m/s</div>
+          <div class="text-[10px] opacity-80">Increased coldness</div>
+        </div>
+      </div>
+      <div class="py-2" />
+      <div class="bg-zinc-800 flex flex-col p-3 rounded-lg space-y-1.5">
+        <div class="flex space-x-1.5 items-center">
+          <div style="width: 25px"> <img src="wind-speed.png" /></div>
+          <div class="text-sm">Precipitation</div>
+        </div>
+        <div style="width: 100%"> <img src="chart.png" /></div>
+        <div class="text-[10px] opacity-80">Increased rain in next 4 hours</div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
